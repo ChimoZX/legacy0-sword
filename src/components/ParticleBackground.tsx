@@ -1,5 +1,5 @@
 // src/components/ParticleBackground.tsx
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 const ParticleBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
