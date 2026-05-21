@@ -19,7 +19,7 @@ The project manages global background music state while keeping scroll-based ani
 
 ```bash
 # Clone the repo
-git clone [https://github.com/ChimoZX/legacy0-sword.git](https://github.com/ChimoZX/legacy0-sword.git)
+git clone https://github.com/ChimoZX/legacy0-sword.git
 
 # Go into the project
 cd legacy0-sword
