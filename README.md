@@ -1,73 +1,29 @@
-# React + TypeScript + Vite
+Legacy - Interactive React Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An immersive fantasy-themed web experience created to showcase advanced web animation and interactive frontend design.
 
-Currently, two official plugins are available:
+The project focuses on building a cinematic interface instead of a traditional static landing page, combining smooth animations, interactive audio controls, and a bilingual interface (EN/ES).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Repository: GitHub Repository
 
-## React Compiler
+Tech Stack
+React — UI components and state management
+TypeScript — Strong typing and maintainable code
+Tailwind CSS — Custom dark-theme styling
+Vite — Frontend tooling and development server
+The Challenge
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The project manages global background music state while keeping scroll-based animations smooth and responsive, requiring careful state management and optimized React hooks.
 
-## Expanding the ESLint configuration
+Run it locally
+# Clone the repo
+git clone https://github.com/ChimoZX/legacy0-sword.git
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Go into the project
+cd legacy0-sword
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# Install dependencies
+npm install
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Start the dev server
+npm run dev
