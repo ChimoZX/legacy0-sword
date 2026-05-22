@@ -14,7 +14,6 @@ body {
   cursor: none;
 }
 
-/* Forzamos la fuente Cinzel para títulos */
 h1, h2, h3, h4, .font-serif {
   font-family: 'Cinzel', serif;
 }
