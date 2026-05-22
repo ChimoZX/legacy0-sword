@@ -5,7 +5,7 @@ An immersive fantasy-themed web experience created to showcase advanced web anim
 The project focuses on building a cinematic interface instead of a traditional static landing page, combining smooth animations, interactive audio controls, and a bilingual interface (EN/ES).
 
 
-**[View](https://legacy0-sword.vercel.app/**
+**[View](https://legacy0-sword.vercel.app/)**
 
 
 ###  Tech Stack
