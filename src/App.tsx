@@ -2,10 +2,10 @@ import { useState, useRef, lazy, Suspense } from 'react';
 import { motion, useScroll, useTransform, type Variants } from 'framer-motion';
 import { Volume2, VolumeX, ChevronDown, Sparkles, Map, Shield, History, Cloud, Skull, Play, Globe } from 'lucide-react';
 
-// --- OPTIMIZACIÓN DE RENDIMIENTO: Carga diferida del fondo ---
+
 const ParticleBackground = lazy(() => import('./components/ParticleBackground'));
 
-// --- DATA & IDIOMAS (SIN IMÁGENES - SOLO PLACEHOLDERS) ---
+
 const CONTENT = {
   en: {
     nav: { title: "The Legacy", audioOn: "Audio On", audioOff: "Audio Off" },
@@ -201,7 +201,6 @@ const App = () => {
         </Suspense>
       </div>
 
-      {/* NAVBAR */}
       <motion.nav 
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -238,7 +237,6 @@ const App = () => {
         </div>
       </motion.nav>
 
-      {/* HERO SECTION */}
       <section className="relative h-screen flex flex-col justify-between items-center overflow-hidden z-10 bg-transparent">
         
         <div className="h-24 w-full"></div>
@@ -288,7 +286,7 @@ const App = () => {
                transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
                className="relative flex justify-center items-center"
             >
-               {/* BRILLO VERTICAL FINO (Optimizado) */}
+
                <motion.div 
                  animate={{ opacity: [0.3, 0.5, 0.3] }}
                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
@@ -302,7 +300,6 @@ const App = () => {
           </motion.div>
         </div>
 
-        {/* INDICADOR DE SCROLL */}
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }} 
@@ -324,7 +321,7 @@ const App = () => {
         </motion.div>
       </section>
 
-      {/* --- SECCIÓN 2: LÍNEA TEMPORAL --- */}
+
       <section className="relative z-20 bg-gradient-to-b from-[#050505] to-[#0a0a0a] py-20 sm:py-40 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-full bg-gradient-to-b from-transparent via-[#D4AF37]/10 to-transparent"></div>
         <div className="max-w-6xl mx-auto space-y-24 sm:space-y-48">
@@ -348,7 +345,7 @@ const App = () => {
   );
 };
 
-// --- COMPONENTES AUXILIARES ---
+
 
 const SectionTitle = ({ title, subtitle }: { title: string, subtitle: string }) => (
   <div className="text-center relative z-10 mb-20 sm:mb-32 px-4">
