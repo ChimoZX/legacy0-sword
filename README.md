@@ -4,7 +4,7 @@ An immersive fantasy-themed web experience created to showcase advanced web anim
 
 The project focuses on building a cinematic interface instead of a traditional static landing page, combining smooth animations, interactive audio controls, and a bilingual interface (EN/ES).
 
-**[  View Live Demo ](https://legacy0-sword.vercel.app/**
+**[  View  ](https://legacy0-sword.vercel.app/**
 
 ###  Tech Stack
 * **React** — UI components and state management
@@ -12,8 +12,6 @@ The project focuses on building a cinematic interface instead of a traditional s
 * **Tailwind CSS** — Custom dark-theme styling
 * **Vite** — Frontend tooling and development server
 
-###  The Challenge
-The project manages global background music state while keeping scroll-based animations smooth and responsive, requiring careful state management and optimized React hooks.
 
 ###  Run it locally
 
